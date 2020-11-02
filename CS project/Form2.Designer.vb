@@ -113,6 +113,9 @@ Partial Class Form2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox32, 7, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox30, 3, 7)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox19, 4, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox22, 3, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox31, 5, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox29, 1, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox28, 6, 6)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox27, 4, 6)
@@ -140,9 +143,6 @@ Partial Class Form2
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox3, 4, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox19, 4, 4)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox22, 3, 5)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox31, 5, 7)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(183, 12)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 8
@@ -322,7 +322,7 @@ Partial Class Form2
         'PictureBox19
         '
         Me.PictureBox19.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox19.Location = New System.Drawing.Point(200, 199)
+        Me.PictureBox19.Location = New System.Drawing.Point(201, 201)
         Me.PictureBox19.Name = "PictureBox19"
         Me.PictureBox19.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox19.TabIndex = 3
@@ -349,7 +349,7 @@ Partial Class Form2
         'PictureBox22
         '
         Me.PictureBox22.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox22.Location = New System.Drawing.Point(149, 250)
+        Me.PictureBox22.Location = New System.Drawing.Point(150, 251)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox22.TabIndex = 3
@@ -430,7 +430,7 @@ Partial Class Form2
         'PictureBox31
         '
         Me.PictureBox31.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox31.Location = New System.Drawing.Point(252, 347)
+        Me.PictureBox31.Location = New System.Drawing.Point(251, 350)
         Me.PictureBox31.Name = "PictureBox31"
         Me.PictureBox31.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox31.TabIndex = 3
@@ -439,7 +439,7 @@ Partial Class Form2
         'PictureBox32
         '
         Me.PictureBox32.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox32.Location = New System.Drawing.Point(350, 349)
+        Me.PictureBox32.Location = New System.Drawing.Point(351, 350)
         Me.PictureBox32.Name = "PictureBox32"
         Me.PictureBox32.Size = New System.Drawing.Size(50, 50)
         Me.PictureBox32.TabIndex = 3
