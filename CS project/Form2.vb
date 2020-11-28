@@ -17,15 +17,15 @@
 
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) 
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) 
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) 
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
