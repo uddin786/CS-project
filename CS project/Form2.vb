@@ -1,6 +1,6 @@
 ﻿Public Class Form2
     Public board(7, 7) As Integer
-    Public P As String = ""
+    Public P As String = "P"
     Public Sub New()
         board = {{1, 0, 1, 0, 1, 0, 1, 0},
                 {0, 1, 0, 1, 0, 1, 0, 1},
