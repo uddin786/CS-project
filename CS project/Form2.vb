@@ -1,31 +1,6 @@
 ﻿Public Class Form2
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
-
-
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs)
-
-    End Sub
 End Class
