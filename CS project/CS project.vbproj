@@ -129,5 +129,29 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\rk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\rks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\rs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
