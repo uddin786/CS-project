@@ -57,6 +57,7 @@ Partial Class Form2
         Me.P84 = New System.Windows.Forms.PictureBox()
         Me.P86 = New System.Windows.Forms.PictureBox()
         Me.P88 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,6 +117,8 @@ Partial Class Form2
         Me.P11.BackColor = System.Drawing.Color.White
         Me.P11.BackgroundImage = CType(resources.GetObject("P11.BackgroundImage"), System.Drawing.Image)
         Me.P11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.P11.Cursor = System.Windows.Forms.Cursors.Default
+        Me.P11.Image = Global.CS_project.My.Resources.Resources.g
         Me.P11.Location = New System.Drawing.Point(122, 4)
         Me.P11.Name = "P11"
         Me.P11.Size = New System.Drawing.Size(50, 50)
@@ -463,11 +466,21 @@ Partial Class Form2
         Me.P88.TabIndex = 37
         Me.P88.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(1, 90)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 38
+        Me.Label2.Text = "Label2"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(539, 416)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.P88)
         Me.Controls.Add(Me.P86)
         Me.Controls.Add(Me.P84)
@@ -576,4 +589,5 @@ Partial Class Form2
     Friend WithEvents P84 As PictureBox
     Friend WithEvents P86 As PictureBox
     Friend WithEvents P88 As PictureBox
+    Friend WithEvents Label2 As Label
 End Class

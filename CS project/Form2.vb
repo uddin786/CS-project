@@ -41,7 +41,12 @@
     'End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        P11.Image = Image.FromFile("escape room character.png")
+        'P11.Image = Image.FromFile()
+        'P11.SizeMode = PictureBoxSizeMode.StretchImage
+        Me.BackColor = Color.Aqua
+        Dim labelt As New Label
+        Me.Controls.Add(labelt)
+        labelt.Text = "YES"
     End Sub
 
     'a
