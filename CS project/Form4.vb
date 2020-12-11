@@ -33,6 +33,10 @@
         P88.Image = Image.FromFile("r.png")
         P88.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
+
+    Public Function selected(name)
+
+    End Function
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         shows()
     End Sub
