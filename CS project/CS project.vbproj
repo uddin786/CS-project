@@ -139,44 +139,44 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\g.png">
+    <Resource Include="bin\Debug\g.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\gk.png">
+    <Resource Include="bin\Debug\gk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\gks.png">
+    <Resource Include="bin\Debug\gks.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\gs.png">
+    <Resource Include="bin\Debug\gs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\r.png">
+    <Resource Include="bin\Debug\r.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\rk.png">
+    <Resource Include="bin\Debug\rk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\rks.png">
+    <Resource Include="bin\Debug\rks.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\rs.png">
+    <Resource Include="bin\Debug\rs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
