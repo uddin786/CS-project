@@ -34,10 +34,44 @@
         P88.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
 
-    Public Function selected()
-
+    Public Function selected(ByRef x)
+        If x.image = Image.FromFile("r.png") Then
+            x.image = Image.FromFile("rs.png")
+        End If
     End Function
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         shows()
+    End Sub
+
+    Private Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
+        selected(P71)
+    End Sub
+
+    Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
+
+    End Sub
+
+    Private Sub P73_Click(sender As Object, e As EventArgs) Handles P73.Click
+        selected(P73)
+    End Sub
+
+    Private Sub P84_Click(sender As Object, e As EventArgs) Handles P84.Click
+
+    End Sub
+
+    Private Sub P75_Click(sender As Object, e As EventArgs) Handles P75.Click
+        selected(P75)
+    End Sub
+
+    Private Sub P86_Click(sender As Object, e As EventArgs) Handles P86.Click
+
+    End Sub
+
+    Private Sub P77_Click(sender As Object, e As EventArgs) Handles P77.Click
+        selected(P77)
+    End Sub
+
+    Private Sub P88_Click(sender As Object, e As EventArgs) Handles P88.Click
+
     End Sub
 End Class
