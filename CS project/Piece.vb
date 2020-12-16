@@ -7,7 +7,7 @@
         x_pos = x
         y_pos = y
         piece_val = p_value
-        re_flags()
+        're_flags()
     End Sub
 
     Public Function ret_x() As Integer
