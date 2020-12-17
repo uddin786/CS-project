@@ -1,4 +1,5 @@
 ﻿Public Class Form4
+    Dim P71red As Boolean
     Public Sub shows()
         P11.Image = Image.FromFile("g.png")
         P11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -18,6 +19,7 @@
         P28.SizeMode = PictureBoxSizeMode.StretchImage
         P71.Image = Image.FromFile("r.png")
         P71.SizeMode = PictureBoxSizeMode.StretchImage
+        P71red = True
         P73.Image = Image.FromFile("r.png")
         P73.SizeMode = PictureBoxSizeMode.StretchImage
         P75.Image = Image.FromFile("r.png")
@@ -34,17 +36,20 @@
         P88.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub
 
-    Public Function selected(ByRef x)
-        If x.image = Image.FromFile("r.png") Then
-            x.image = Image.FromFile("rs.png")
-        End If
-    End Function
+    'Public Function selected(ByRef x)
+    'f x = True Then
+    '       x.image = Image.FromFile("rs.png")
+    'End If
+    'End Function
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         shows()
     End Sub
 
     Private Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
-        selected(P71)
+        If P71red = True Then
+            P71.Image = Image.FromFile("rs.png")
+        End If
+        'selected(P71red)
     End Sub
 
     Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
