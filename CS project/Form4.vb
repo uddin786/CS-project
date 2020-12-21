@@ -55,8 +55,21 @@
     Private Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
         If P71red = True Then
             P71.Image = Image.FromFile("rs.png")
+            'If P62.Image.ToString = Nothing Then
+            '    P62.Image = Image.FromFile("r.png")
+
+            'End If
         End If
         'selected(P71red)
+    End Sub
+
+    Private Sub P62_Click(sender As Object, e As EventArgs) Handles P62.Click
+        If P71red = True Then
+            P71.Image = Nothing
+            P62.Image = Image.FromFile("r.png")
+            P62.SizeMode = PictureBoxSizeMode.StretchImage
+
+        End If
     End Sub
 
     Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
