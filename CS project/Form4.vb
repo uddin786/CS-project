@@ -57,7 +57,7 @@
             P71.Image = Image.FromFile("rs.png")
             'If P62.Image.ToString = Nothing Then
             '    P62.Image = Image.FromFile("r.png")
-
+            '
             'End If
         End If
         'selected(P71red)
