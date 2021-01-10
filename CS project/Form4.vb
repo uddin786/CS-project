@@ -52,24 +52,36 @@
         shows()
     End Sub
 
-    Private Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
+    Public Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
         If P71red = True Then
             P71.Image = Image.FromFile("rs.png")
-            'If P62.Image.ToString = Nothing Then
-            '    P62.Image = Image.FromFile("r.png")
-            '
-            'End If
+            'P62_Click(sender, e)
+
         End If
-        'selected(P71red)
+
     End Sub
 
-    Private Sub P62_Click(sender As Object, e As EventArgs) Handles P62.Click
-        If P71red = True Then
-            P71.Image = Nothing
+    Public Sub P62_Click(sender As Object, e As EventArgs) Handles P62.Click
+        If P71.Image Is Image.FromFile("rs.png") Then
             P62.Image = Image.FromFile("r.png")
             P62.SizeMode = PictureBoxSizeMode.StretchImage
-
+            P71.Image = Nothing
+        ElseIf P71.Image Is Image.FromFile("r.png") Then
+            P71.Image = Image.FromFile("g.png")
+        Else
+            P71.Image = Image.FromFile("gs.png")
         End If
+        If P71.Image Is Nothing Then
+            P71.Image = Image.FromFile("rk.png")
+        End If
+        'P62.SizeMode = PictureBoxSizeMode.StretchImage
+        'P62.Image = P71.Image
+        'If P71red = True Then
+        '    P71.Image = Nothing
+        '    P62.Image = Image.FromFile("r.png")
+        '    P62.SizeMode = PictureBoxSizeMode.StretchImage
+
+        'End If
     End Sub
 
     Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
