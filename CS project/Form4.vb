@@ -56,23 +56,18 @@
         If P71red = True Then
             P71.Image = Image.FromFile("rs.png")
             'P62_Click(sender, e)
-
+            P71.Tag = "rs.png"
         End If
 
     End Sub
 
     Public Sub P62_Click(sender As Object, e As EventArgs) Handles P62.Click
-        If P71.Image Is Image.FromFile("rs.png") Then
+        If P71.Tag = "rs.png" Then
             P62.Image = Image.FromFile("r.png")
             P62.SizeMode = PictureBoxSizeMode.StretchImage
+            P62.Tag = "r.png"
             P71.Image = Nothing
-        ElseIf P71.Image Is Image.FromFile("r.png") Then
-            P71.Image = Image.FromFile("g.png")
-        Else
-            P71.Image = Image.FromFile("gs.png")
-        End If
-        If P71.Image Is Nothing Then
-            P71.Image = Image.FromFile("rk.png")
+            P71.Tag = String.Empty
         End If
         'P62.SizeMode = PictureBoxSizeMode.StretchImage
         'P62.Image = P71.Image
