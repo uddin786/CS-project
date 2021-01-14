@@ -55,7 +55,6 @@
     Public Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
         If P71red = True Then
             P71.Image = Image.FromFile("rs.png")
-            'P62_Click(sender, e)
             P71.Tag = "rs.png"
         End If
 
