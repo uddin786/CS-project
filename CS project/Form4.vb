@@ -1,45 +1,62 @@
 ﻿Public Class Form4
     Dim P71red, P82red, P73red, P84red, P75red, P86red, P77red, P88red As Boolean
+
     Public Sub shows()
         P11.Image = Image.FromFile("g.png")
         P11.SizeMode = PictureBoxSizeMode.StretchImage
+        P11.Tag = "g.png"
         P13.Image = Image.FromFile("g.png")
         P13.SizeMode = PictureBoxSizeMode.StretchImage
+        P13.Tag = "g.png"
         P15.Image = Image.FromFile("g.png")
         P15.SizeMode = PictureBoxSizeMode.StretchImage
+        P15.Tag = "g.png"
         P17.Image = Image.FromFile("g.png")
         P17.SizeMode = PictureBoxSizeMode.StretchImage
+        P17.Tag = "g.png"
         P22.Image = Image.FromFile("g.png")
         P22.SizeMode = PictureBoxSizeMode.StretchImage
+        P22.Tag = "g.png"
         P24.Image = Image.FromFile("g.png")
         P24.SizeMode = PictureBoxSizeMode.StretchImage
+        P24.Tag = "g.png"
         P26.Image = Image.FromFile("g.png")
         P26.SizeMode = PictureBoxSizeMode.StretchImage
+        P26.Tag = "g.png"
         P28.Image = Image.FromFile("g.png")
         P28.SizeMode = PictureBoxSizeMode.StretchImage
+        P28.Tag = "g.png"
         P71.Image = Image.FromFile("r.png")
         P71.SizeMode = PictureBoxSizeMode.StretchImage
         P71red = True
+        P71.Tag = "r.png"
         P73.Image = Image.FromFile("r.png")
         P73.SizeMode = PictureBoxSizeMode.StretchImage
+        P73.Tag = "r.png"
         P73red = True
         P75.Image = Image.FromFile("r.png")
         P75.SizeMode = PictureBoxSizeMode.StretchImage
+        P75.Tag = "r.png"
         P75red = True
         P77.Image = Image.FromFile("r.png")
         P77.SizeMode = PictureBoxSizeMode.StretchImage
+        P77.Tag = "r.png"
         P77red = True
         P82.Image = Image.FromFile("r.png")
         P82.SizeMode = PictureBoxSizeMode.StretchImage
+        P82.Tag = "r.png"
         P82red = True
         P84.Image = Image.FromFile("r.png")
         P84.SizeMode = PictureBoxSizeMode.StretchImage
+        P84.Tag = "r.png"
         P84red = True
         P86.Image = Image.FromFile("r.png")
         P86.SizeMode = PictureBoxSizeMode.StretchImage
+        P86.Tag = "r.png"
         P86red = True
         P88.Image = Image.FromFile("r.png")
         P88.SizeMode = PictureBoxSizeMode.StretchImage
+        P88.Tag = "r.png"
         P88red = True
     End Sub
 
