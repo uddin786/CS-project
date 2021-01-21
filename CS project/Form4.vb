@@ -106,10 +106,26 @@
         Select Case value
             Case 1
                 P22.Image = Nothing
+                P22.Tag = String.Empty
                 Dim value1 As Integer = CInt(Int((2 * Rnd()) + 1))
+                If value1 = 1 Then
+                    P31.Image = Image.FromFile("g.png")
+                    P31.Tag = "g.png"
+                ElseIf value1 = 2 Then
+                    P33.Image = Image.FromFile("g.png")
+                    P33.Tag = "g.png"
+                End If
             Case 2
                 P24.Image = Nothing
+                P24.Tag = String.Empty
                 Dim value1 As Integer = CInt(Int((2 * Rnd()) + 1))
+                If value1 = 1 Then
+                    P33.Image = Image.FromFile("g.png")
+                    P33.Tag = "g.png"
+                ElseIf value1 = 2 Then
+                    P35.Image = Image.FromFile("g.png")
+                    P35.Tag = "g.png"
+                End If
             Case 3
                 P26.Image = Nothing
                 P26.Tag = String.Empty
