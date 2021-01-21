@@ -105,13 +105,27 @@
         Dim value As Integer = CInt(Int((4 * Rnd()) + 1))
         Select Case value
             Case 1
-                P22.Image = Image.FromFile("gs.png")
+                P22.Image = Nothing
+                Dim value1 As Integer = CInt(Int((2 * Rnd()) + 1))
             Case 2
-                P24.Image = Image.FromFile("gs.png")
+                P24.Image = Nothing
+                Dim value1 As Integer = CInt(Int((2 * Rnd()) + 1))
             Case 3
-                P26.Image = Image.FromFile("gs.png")
+                P26.Image = Nothing
+                P26.Tag = String.Empty
+                Dim value1 As Integer = CInt(Int((2 * Rnd()) + 1))
+                If value1 = 1 Then
+                    P35.Image = Image.FromFile("g.png")
+                    P35.Tag = "g.png"
+                ElseIf value1 = 2 Then
+                    P37.Image = Image.FromFile("g.png")
+                    P37.Tag = "g.png"
+                End If
             Case 4
-                P28.Image = Image.FromFile("gs.png")
+                P28.Image = Nothing
+                P28.Tag = String.Empty
+                P37.Image = Image.FromFile("g.png")
+                P37.Tag = "g.png"
         End Select
 
     End Sub
