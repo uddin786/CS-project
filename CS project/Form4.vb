@@ -58,6 +58,38 @@
         P88.SizeMode = PictureBoxSizeMode.StretchImage
         P88.Tag = "r.png"
         P88red = True
+        P31.SizeMode = PictureBoxSizeMode.StretchImage
+        P31.Tag = String.Empty
+        P33.SizeMode = PictureBoxSizeMode.StretchImage
+        P33.Tag = String.Empty
+        P35.SizeMode = PictureBoxSizeMode.StretchImage
+        P35.Tag = String.Empty
+        P37.SizeMode = PictureBoxSizeMode.StretchImage
+        P37.Tag = String.Empty
+        P42.SizeMode = PictureBoxSizeMode.StretchImage
+        P42.Tag = String.Empty
+        P44.SizeMode = PictureBoxSizeMode.StretchImage
+        P44.Tag = String.Empty
+        P46.SizeMode = PictureBoxSizeMode.StretchImage
+        P46.Tag = String.Empty
+        P48.SizeMode = PictureBoxSizeMode.StretchImage
+        P48.Tag = String.Empty
+        P51.SizeMode = PictureBoxSizeMode.StretchImage
+        P51.Tag = String.Empty
+        P53.SizeMode = PictureBoxSizeMode.StretchImage
+        P53.Tag = String.Empty
+        P55.SizeMode = PictureBoxSizeMode.StretchImage
+        P55.Tag = String.Empty
+        P57.SizeMode = PictureBoxSizeMode.StretchImage
+        P57.Tag = String.Empty
+        P62.SizeMode = PictureBoxSizeMode.StretchImage
+        P62.Tag = String.Empty
+        P64.SizeMode = PictureBoxSizeMode.StretchImage
+        P64.Tag = String.Empty
+        P66.SizeMode = PictureBoxSizeMode.StretchImage
+        P66.Tag = String.Empty
+        P68.SizeMode = PictureBoxSizeMode.StretchImage
+        P68.Tag = String.Empty
     End Sub
 
     'Public Function selected(ByRef x)
