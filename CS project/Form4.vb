@@ -52,6 +52,22 @@
         shows()
     End Sub
 
+    Public Sub AIpick()
+        Dim value As Integer = CInt(Int((4 * Rnd()) + 1))
+        Select Case value
+            Case 1
+                P22.Image = Image.FromFile("gs.png")
+            Case 2
+                P24.Image = Image.FromFile("gs.png")
+            Case 3
+                P26.Image = Image.FromFile("gs.png")
+            Case 4
+                P28.Image = Image.FromFile("gs.png")
+        End Select
+
+    End Sub
+
+
     Public Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
         If P71red = True Then
             P71.Image = Image.FromFile("rs.png")
@@ -67,6 +83,7 @@
             P62.Tag = "r.png"
             P71.Image = Nothing
             P71.Tag = String.Empty
+            AIpick()
         End If
         'P62.SizeMode = PictureBoxSizeMode.StretchImage
         'P62.Image = P71.Image
