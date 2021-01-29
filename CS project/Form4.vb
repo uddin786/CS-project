@@ -175,20 +175,23 @@
     End Sub
 
     Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
-        If P82red = True Then
+        If P82.Tag = "r.png" Then
             P82.Image = Image.FromFile("rs.png")
+            P82.Tag = "rs.png"
         End If
     End Sub
 
     Private Sub P73_Click(sender As Object, e As EventArgs) Handles P73.Click
-        If P73red = True Then
+        If P73.Tag = "r.png" Then
             P73.Image = Image.FromFile("rs.png")
+            P73.Tag = "rs.png"
         End If
     End Sub
 
     Private Sub P84_Click(sender As Object, e As EventArgs) Handles P84.Click
-        If P84red = True Then
+        If P84.Tag = "r.png" Then
             P84.Image = Image.FromFile("rs.png")
+            P84.Tag = "rs.png"
         End If
     End Sub
 
