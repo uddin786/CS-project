@@ -1,6 +1,7 @@
 ﻿Public Class Form4
     Dim P71red, P82red, P73red, P84red, P75red, P86red, P77red, P88red As Boolean
-
+    Dim selected As Boolean = False
+    Dim selectedname As String = ""
     Public Sub shows()
         P11.Image = Image.FromFile("g.png")
         P11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -178,13 +179,24 @@
         If P82.Tag = "r.png" Then
             P82.Image = Image.FromFile("rs.png")
             P82.Tag = "rs.png"
+        ElseIf P82.Tag = "rs.png" Then
+            P82.Image = Image.FromFile("r.png")
+            P82.Tag = "r.png"
         End If
+
     End Sub
 
     Private Sub P73_Click(sender As Object, e As EventArgs) Handles P73.Click
         If P73.Tag = "r.png" Then
-            P73.Image = Image.FromFile("rs.png")
-            P73.Tag = "rs.png"
+            If selected = True Then
+                P73.Image = Image.FromFile("r.png")
+                P73.Tag = "r.png"
+                selected = False
+            Else
+                P73.Image = Image.FromFile("rs.png")
+                P73.Tag = "rs.png"
+                selected = True
+            End If
         End If
     End Sub
 
@@ -196,26 +208,30 @@
     End Sub
 
     Private Sub P75_Click(sender As Object, e As EventArgs) Handles P75.Click
-        If P75red = True Then
+        If P75.Tag = "r.png" Then
             P75.Image = Image.FromFile("rs.png")
+            P75.Tag = "rs.png"
         End If
     End Sub
 
     Private Sub P86_Click(sender As Object, e As EventArgs) Handles P86.Click
-        If P86red = True Then
+        If P86.Tag = "r.png" Then
             P86.Image = Image.FromFile("rs.png")
+            P86.Tag = "rs.png"
         End If
     End Sub
 
     Private Sub P77_Click(sender As Object, e As EventArgs) Handles P77.Click
-        If P77red = True Then
+        If P77.Tag = "r.png" Then
             P77.Image = Image.FromFile("rs.png")
+            P77.Tag = "rs.png"
         End If
     End Sub
 
     Private Sub P88_Click(sender As Object, e As EventArgs) Handles P88.Click
-        If P88red = True Then
+        If P88.Tag = "r.png" Then
             P88.Image = Image.FromFile("rs.png")
+            P88.Tag = "rs.png"
         End If
     End Sub
 End Class
