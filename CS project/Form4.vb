@@ -147,6 +147,112 @@
 
     End Sub
 
+    Public Sub AI()
+        Dim pick As Integer = CInt(Int((32 * Rnd()) + 1))
+        If pick = 1 Then
+            If P11.Tag = "g.png" Or "gk.png" Then
+                If P22.Tag = "g.png" Or "gk.png" Then
+                    AI()
+                ElseIf P22.Tag = String.Empty Then
+                    P22.Image = Image.FromFile("g.png")
+                    P22.Tag = "g.png"
+                End If
+            End If
+        ElseIf pick = 2 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 3 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 4 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 5 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 6 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 7 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 8 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 9 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 10 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 11 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 12 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 13 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 14 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 15 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 16 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 17 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 18 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 19 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 20 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 21 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 22 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 23 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 24 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 25 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 26 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 27 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 28 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 29 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 30 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 31 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        ElseIf pick = 32 Then
+            P37.Image = Image.FromFile("g.png")
+            P37.Tag = "g.png"
+        End If
+    End Sub
 
     Public Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
         If P71red = True Then
@@ -163,7 +269,7 @@
             P62.Tag = "r.png"
             P71.Image = Nothing
             P71.Tag = String.Empty
-            AIpick()
+            AI()
         End If
         'P62.SizeMode = PictureBoxSizeMode.StretchImage
         'P62.Image = P71.Image
@@ -188,15 +294,11 @@
 
     Private Sub P73_Click(sender As Object, e As EventArgs) Handles P73.Click
         If P73.Tag = "r.png" Then
-            If selected = True Then
-                P73.Image = Image.FromFile("r.png")
-                P73.Tag = "r.png"
-                selected = False
-            Else
-                P73.Image = Image.FromFile("rs.png")
-                P73.Tag = "rs.png"
-                selected = True
-            End If
+            P73.Image = Image.FromFile("rs.png")
+            P73.Tag = "rs.png"
+        ElseIf P73.Tag = "rs.png" Then
+            P73.Image = Image.FromFile("r.png")
+            P73.Tag = "r.png"
         End If
     End Sub
 
@@ -204,6 +306,9 @@
         If P84.Tag = "r.png" Then
             P84.Image = Image.FromFile("rs.png")
             P84.Tag = "rs.png"
+        ElseIf P84.Tag = "rs.png" Then
+            P84.Image = Image.FromFile("r.png")
+            P84.Tag = "r.png"
         End If
     End Sub
 
@@ -211,6 +316,9 @@
         If P75.Tag = "r.png" Then
             P75.Image = Image.FromFile("rs.png")
             P75.Tag = "rs.png"
+        ElseIf P75.Tag = "rs.png" Then
+            P75.Image = Image.FromFile("r.png")
+            P75.Tag = "r.png"
         End If
     End Sub
 
@@ -218,6 +326,9 @@
         If P86.Tag = "r.png" Then
             P86.Image = Image.FromFile("rs.png")
             P86.Tag = "rs.png"
+        ElseIf P86.Tag = "rs.png" Then
+            P86.Image = Image.FromFile("r.png")
+            P86.Tag = "r.png"
         End If
     End Sub
 
@@ -225,6 +336,9 @@
         If P77.Tag = "r.png" Then
             P77.Image = Image.FromFile("rs.png")
             P77.Tag = "rs.png"
+        ElseIf P77.Tag = "rs.png" Then
+            P77.Image = Image.FromFile("r.png")
+            P77.Tag = "r.png"
         End If
     End Sub
 
@@ -232,6 +346,9 @@
         If P88.Tag = "r.png" Then
             P88.Image = Image.FromFile("rs.png")
             P88.Tag = "rs.png"
+        ElseIf P88.Tag = "rs.png" Then
+            P88.Image = Image.FromFile("r.png")
+            P88.Tag = "r.png"
         End If
     End Sub
 End Class
