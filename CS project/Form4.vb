@@ -2,6 +2,7 @@
     Dim P71red, P82red, P73red, P84red, P75red, P86red, P77red, P88red As Boolean
     Dim selected As Boolean = False
     Dim selectedname As String = ""
+    Dim StopWatch As New Diagnostics.Stopwatch
     Public Sub shows()
         P11.Image = Image.FromFile("g.png")
         P11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -100,6 +101,9 @@
     'End Function
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         shows()
+        Timer1.Start()
+        Me.StopWatch.Start()
+
     End Sub
 
     Public Sub AIpick()
@@ -305,6 +309,11 @@
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim elapsed As TimeSpan = Me.StopWatch.Elapsed
+        timerbox.Text = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", Math.Floor(elapsed.TotalHours), elapsed.Minutes, elapsed.Seconds, elapsed.Milliseconds)
     End Sub
 
     Private Sub P82_Click(sender As Object, e As EventArgs) Handles P82.Click
