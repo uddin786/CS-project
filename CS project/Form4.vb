@@ -293,6 +293,17 @@
                     P55.Tag = "r.png"
                 End If
             End If
+        ElseIf P73.Tag = "rks.png" Then
+            If P64.Tag = "g.png" Then
+                If P55.Tag = String.Empty Then
+                    P73.Image = Nothing
+                    P73.Tag = String.Empty
+                    P64.Image = Nothing
+                    P64.Tag = String.Empty
+                    P55.Image = Image.FromFile("rk.png")
+                    P55.Tag = "rk.png"
+                End If
+            End If
         End If
     End Sub
 
