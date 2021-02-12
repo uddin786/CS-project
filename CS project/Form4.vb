@@ -228,6 +228,7 @@
         ElseIf pick = 23 Then
             P37.Image = Image.FromFile("g.png") ' this is just so that i know that the algorithm is able to pick a random integer
             P37.Tag = "g.png"
+            AI() 'calls the AI subroutine again
         ElseIf pick = 24 Then
             P37.Image = Image.FromFile("g.png")
             P37.Tag = "g.png"
