@@ -163,99 +163,236 @@
                 End If
             End If
         ElseIf pick = 2 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P13.Image = Image.FromFile("g.png")
+            P13.Tag = "g.png"
         ElseIf pick = 3 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P15.Image = Image.FromFile("g.png")
+            P15.Tag = "g.png"
         ElseIf pick = 4 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P17.Image = Image.FromFile("g.png")
+            P17.Tag = "g.png"
         ElseIf pick = 5 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P22.Image = Image.FromFile("g.png")
+            P22.Tag = "g.png"
         ElseIf pick = 6 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P24.Image = Image.FromFile("g.png")
+            P24.Tag = "g.png"
         ElseIf pick = 7 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P26.Image = Image.FromFile("g.png")
+            P26.Tag = "g.png"
         ElseIf pick = 8 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P28.Image = Image.FromFile("g.png")
+            P28.Tag = "g.png"
         ElseIf pick = 9 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P31.Image = Image.FromFile("g.png")
+            P31.Tag = "g.png"
         ElseIf pick = 10 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P33.Image = Image.FromFile("g.png")
+            P33.Tag = "g.png"
         ElseIf pick = 11 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P35.Image = Image.FromFile("g.png")
+            P35.Tag = "g.png"
         ElseIf pick = 12 Then
             P37.Image = Image.FromFile("g.png")
             P37.Tag = "g.png"
         ElseIf pick = 13 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P42.Image = Image.FromFile("g.png")
+            P42.Tag = "g.png"
         ElseIf pick = 14 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P44.Image = Image.FromFile("g.png")
+            P44.Tag = "g.png"
         ElseIf pick = 15 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P46.Image = Image.FromFile("g.png")
+            P46.Tag = "g.png"
         ElseIf pick = 16 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P48.Image = Image.FromFile("g.png")
+            P48.Tag = "g.png"
         ElseIf pick = 17 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P51.Image = Image.FromFile("g.png")
+            P51.Tag = "g.png"
         ElseIf pick = 18 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P53.Image = Image.FromFile("g.png")
+            P53.Tag = "g.png"
         ElseIf pick = 19 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P55.Image = Image.FromFile("g.png")
+            P55.Tag = "g.png"
         ElseIf pick = 20 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P57.Image = Image.FromFile("g.png")
+            P57.Tag = "g.png"
         ElseIf pick = 21 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P62.Image = Image.FromFile("g.png")
+            P62.Tag = "g.png"
         ElseIf pick = 22 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P64.Image = Image.FromFile("g.png")
+            P64.Tag = "g.png"
         ElseIf pick = 23 Then
-            P37.Image = Image.FromFile("g.png") ' this is just so that i know that the algorithm is able to pick a random integer
-            P37.Tag = "g.png"
-            AI() 'calls the AI subroutine again
+            If P66.Tag = String.Empty Then
+                AI()
+            ElseIf P66.Tag = "r.png" Then
+                AI()
+            ElseIf P66.Tag = "rk.png" Then
+                AI()
+            ElseIf P66.Tag = "g.png" Then
+                If P75.Tag = String.Empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P75.Image = Image.FromFile("g.png")
+                    P75.Tag = "g.png"
+                ElseIf P77.Tag = String.Empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P77.Image = Image.FromFile("g.png")
+                    P77.Tag = "g.png"
+                ElseIf P75.Tag = "g.png" Then
+                    AI()
+                ElseIf P75.Tag = "gk.png" Then
+                    AI()
+                ElseIf P77.Tag = "g.png" Then
+                    AI()
+                ElseIf P77.Tag = "gk.png" Then
+                    AI()
+                ElseIf P75.Tag = "r.png" Then
+                    If P84.Tag = "r.png" Then
+                        AI()
+                    ElseIf P84.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P84.Tag = "g.png" Then
+                        AI()
+                    ElseIf P84.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P84.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P75.Image = Nothing
+                        P75.Tag = String.Empty
+                        P84.Image = Image.FromFile("g.png")
+                        P84.Tag = "g.png"
+                    End If
+                ElseIf P77.Tag = "rk.png" Then
+                    If P88.Tag = "r.png" Then
+                        AI()
+                    ElseIf P88.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P88.Tag = "g.png" Then
+                        AI()
+                    ElseIf P88.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P88.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P77.Image = Nothing
+                        P77.Tag = String.Empty
+                        P88.Image = Image.FromFile("g.png")
+                        P88.Tag = "g.png"
+                    End If
+
+                End If
+            ElseIf P66.Tag = "gk.png" Then
+                If P75.Tag = String.Empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P75.Image = Image.FromFile("gk.png")
+                    P75.Tag = "gk.png"
+                ElseIf P77.Tag = String.Empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P77.Image = Image.FromFile("gk.png")
+                    P77.Tag = "gk.png"
+                ElseIf P55.Tag = String.Empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P55.Image = Image.FromFile("gk.png")
+                    P55.Tag = "gk.png"
+                ElseIf p57.Tag = String.empty Then
+                    P66.Image = Nothing
+                    P66.Tag = String.Empty
+                    P57.Image = Image.FromFile("gk.png")
+                    P57.Tag = "gk.png"
+                ElseIf P55.Tag = "g.png" Then
+                    AI()
+                ElseIf P55.Tag = "gk.png" Then
+                    AI()
+                    'fk it cba
+                ElseIf P57.Tag = "g.png" Then
+                    AI()
+                ElseIf P57.Tag = "gk.png" Then
+                    AI()
+                ElseIf P75.Tag = "g.png" Then
+                    AI()
+                ElseIf P75.Tag = "gk.png" Then
+                    AI()
+                ElseIf P77.Tag = "g.png" Then
+                    AI()
+                ElseIf P77.Tag = "gk.png" Then
+                    AI()
+                ElseIf P75.Tag = "r.png" Then
+                    If P84.Tag = "r.png" Then
+                        AI()
+                    ElseIf P84.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P84.Tag = "g.png" Then
+                        AI()
+                    ElseIf P84.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P84.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P75.Image = Nothing
+                        P75.Tag = String.Empty
+                        P84.Image = Image.FromFile("gk.png")
+                        P84.Tag = "gk.png"
+                    End If
+                ElseIf P77.Tag = "rk.png" Then
+                    If P88.Tag = "r.png" Then
+                        AI()
+                    ElseIf P88.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P88.Tag = "g.png" Then
+                        AI()
+                    ElseIf P88.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P88.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P77.Image = Nothing
+                        P77.Tag = String.Empty
+                        P88.Image = Image.FromFile("gk.png")
+                        P88.Tag = "gk.png"
+                    End If
+
+                End If
+
+            End If
+            'P66.Image = Image.FromFile("g.png") ' this is just so that i know that the algorithm is able to pick a random integer
+            'P66.Tag = "g.png"
+            'AI() 'calls the AI subroutine again
         ElseIf pick = 24 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P68.Image = Image.FromFile("g.png")
+            P68.Tag = "g.png"
         ElseIf pick = 25 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P71.Image = Image.FromFile("g.png")
+            P71.Tag = "g.png"
         ElseIf pick = 26 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P73.Image = Image.FromFile("g.png")
+            P73.Tag = "g.png"
         ElseIf pick = 27 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P75.Image = Image.FromFile("g.png")
+            P75.Tag = "g.png"
         ElseIf pick = 28 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P77.Image = Image.FromFile("g.png")
+            P77.Tag = "g.png"
         ElseIf pick = 29 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P82.Image = Image.FromFile("g.png")
+            P82.Tag = "g.png"
         ElseIf pick = 30 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P84.Image = Image.FromFile("g.png")
+            P84.Tag = "g.png"
         ElseIf pick = 31 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P86.Image = Image.FromFile("g.png")
+            P86.Tag = "g.png"
         ElseIf pick = 32 Then
-            P37.Image = Image.FromFile("g.png")
-            P37.Tag = "g.png"
+            P88.Image = Image.FromFile("g.png")
+            P88.Tag = "g.png"
         End If
     End Sub
 
