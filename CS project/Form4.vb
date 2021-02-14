@@ -232,7 +232,7 @@
                 AI()
             ElseIf P66.Tag = "rk.png" Then
                 AI()
-            ElseIf P66.Tag = "g.png" Then
+            ElseIf P66.Tag = "g.png" Then ' normal piece
                 If P75.Tag = String.Empty Then
                     P66.Image = Nothing
                     P66.Tag = String.Empty
@@ -287,7 +287,7 @@
                     End If
 
                 End If
-            ElseIf P66.Tag = "gk.png" Then
+            ElseIf P66.Tag = "gk.png" Then ' king piece
                 If P75.Tag = String.Empty Then
                     P66.Image = Nothing
                     P66.Tag = String.Empty
@@ -303,7 +303,7 @@
                     P66.Tag = String.Empty
                     P55.Image = Image.FromFile("gk.png")
                     P55.Tag = "gk.png"
-                ElseIf p57.Tag = String.empty Then
+                ElseIf p57.Tag = String.empty Then ' king, first 4 around empty spaces
                     P66.Image = Nothing
                     P66.Tag = String.Empty
                     P57.Image = Image.FromFile("gk.png")
@@ -350,6 +350,23 @@
                         P48.Image = Image.FromFile("gk.png")
                         P48.Tag = "gk.png"
                     End If
+                ElseIf P57.Tag = "rk.png" Then
+                    If P48.Tag = "r.png" Then
+                        AI()
+                    ElseIf P48.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P48.Tag = "g.png" Then
+                        AI()
+                    ElseIf P48.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P48.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P57.Image = Nothing
+                        P57.Tag = String.Empty
+                        P48.Image = Image.FromFile("gk.png")
+                        P48.Tag = "gk.png"
+                    End If
                 ElseIf P75.Tag = "g.png" Then
                     AI()
                 ElseIf P75.Tag = "gk.png" Then
@@ -359,6 +376,23 @@
                 ElseIf P77.Tag = "gk.png" Then
                     AI()
                 ElseIf P75.Tag = "r.png" Then
+                    If P84.Tag = "r.png" Then
+                        AI()
+                    ElseIf P84.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P84.Tag = "g.png" Then
+                        AI()
+                    ElseIf P84.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P84.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P75.Image = Nothing
+                        P75.Tag = String.Empty
+                        P84.Image = Image.FromFile("gk.png")
+                        P84.Tag = "gk.png"
+                    End If
+                ElseIf P75.Tag = "rk.png" Then
                     If P84.Tag = "r.png" Then
                         AI()
                     ElseIf P84.Tag = "rk.png" Then
@@ -392,7 +426,23 @@
                         P88.Image = Image.FromFile("gk.png")
                         P88.Tag = "gk.png"
                     End If
-
+                ElseIf P77.Tag = "r.png" Then
+                    If P88.Tag = "r.png" Then
+                        AI()
+                    ElseIf P88.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P88.Tag = "g.png" Then
+                        AI()
+                    ElseIf P88.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P88.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P77.Image = Nothing
+                        P77.Tag = String.Empty
+                        P88.Image = Image.FromFile("gk.png")
+                        P88.Tag = "gk.png"
+                    End If
                 End If
 
             End If
