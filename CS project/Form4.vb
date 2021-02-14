@@ -312,11 +312,44 @@
                     AI()
                 ElseIf P55.Tag = "gk.png" Then
                     AI()
-                    'fk it cba
+                ElseIf P55.Tag = "r.png" Then
+                    If P44.Tag = "r.png" Then
+                        AI()
+                    ElseIf P44.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P44.Tag = "g.png" Then
+                        AI()
+                    ElseIf P44.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P44.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P55.Image = Nothing
+                        P55.Tag = String.Empty
+                        P44.Image = Image.FromFile("gk.png")
+                        P44.Tag = "gk.png"
+                    End If
                 ElseIf P57.Tag = "g.png" Then
                     AI()
                 ElseIf P57.Tag = "gk.png" Then
                     AI()
+                ElseIf P57.Tag = "r.png" Then
+                    If P48.Tag = "r.png" Then
+                        AI()
+                    ElseIf P48.Tag = "rk.png" Then
+                        AI()
+                    ElseIf P48.Tag = "g.png" Then
+                        AI()
+                    ElseIf P48.Tag = "gk.png" Then
+                        AI()
+                    ElseIf P48.Tag = String.Empty Then
+                        P66.Image = Nothing
+                        P66.Tag = String.Empty
+                        P57.Image = Nothing
+                        P57.Tag = String.Empty
+                        P48.Image = Image.FromFile("gk.png")
+                        P48.Tag = "gk.png"
+                    End If
                 ElseIf P75.Tag = "g.png" Then
                     AI()
                 ElseIf P75.Tag = "gk.png" Then
