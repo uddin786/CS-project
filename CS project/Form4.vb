@@ -444,7 +444,6 @@
                         P88.Tag = "gk.png"
                     End If
                 End If
-
             End If
             'P66.Image = Image.FromFile("g.png") ' this is just so that i know that the algorithm is able to pick a random integer
             'P66.Tag = "g.png"
