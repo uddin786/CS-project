@@ -208,24 +208,30 @@
             P48.Image = Image.FromFile("g.png")
             P48.Tag = "g.png"
         ElseIf pick = 17 Then
-            P51.Image = Image.FromFile("g.png")
-            P51.Tag = "g.png"
+            If P51.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 18 Then
-            P53.Image = Image.FromFile("g.png")
-            P53.Tag = "g.png"
+            If P53.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 19 Then
-            P55.Image = Image.FromFile("g.png")
-            P55.Tag = "g.png"
+            If P55.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 20 Then
-            P57.Image = Image.FromFile("g.png")
-            P57.Tag = "g.png"
+            If P57.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 21 Then
-            P62.Image = Image.FromFile("g.png")
-            P62.Tag = "g.png"
+            If P62.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 22 Then
-            P64.Image = Image.FromFile("g.png")
-            P64.Tag = "g.png"
-        ElseIf pick = 23 Then
+            If P64.Tag = String.Empty Then
+
+            End If
+        ElseIf pick = 23 Then '
             If P66.Tag = String.Empty Then
                 AI()
             ElseIf P66.Tag = "r.png" Then
@@ -323,11 +329,11 @@
                         AI()
                     ElseIf P44.Tag = String.Empty Then
                         P66.Image = Nothing
-                        P66.Tag = String.Empty
+                        P66.Tag = String.Empty ' makes image empty where computer piece used to be
                         P55.Image = Nothing
-                        P55.Tag = String.Empty
-                        P44.Image = Image.FromFile("gk.png")
-                        P44.Tag = "gk.png"
+                        P55.Tag = String.Empty ' makes image empty where player piece used to be
+                        P44.Image = Image.FromFile("gk.png") ' makes the empty piece diagnoal become occupied by the computer piece that has taken player piece
+                        P44.Tag = "gk.png" 'these lines show how the computer would take a player piece
                     End If
                 ElseIf P57.Tag = "g.png" Then
                     AI()
@@ -445,18 +451,19 @@
                     End If
                 End If
             End If
-            'P66.Image = Image.FromFile("g.png") ' this is just so that i know that the algorithm is able to pick a random integer
-            'P66.Tag = "g.png"
-            'AI() 'calls the AI subroutine again
         ElseIf pick = 24 Then
-            P68.Image = Image.FromFile("g.png")
-            P68.Tag = "g.png"
+            If P68.Tag = String.Empty Then
+                P68.Image = Image.FromFile("g.png")
+                P68.Tag = "g.png"
+            End If
         ElseIf pick = 25 Then
-            P71.Image = Image.FromFile("g.png")
-            P71.Tag = "g.png"
+            If P71.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 26 Then
-            P73.Image = Image.FromFile("g.png")
-            P73.Tag = "g.png"
+            If P73.Tag = String.Empty Then
+
+            End If
         ElseIf pick = 27 Then
             P75.Image = Image.FromFile("g.png")
             P75.Tag = "g.png"
@@ -470,12 +477,14 @@
             P84.Image = Image.FromFile("g.png")
             P84.Tag = "g.png"
         ElseIf pick = 31 Then
-            P86.Image = Image.FromFile("g.png")
-            P86.Tag = "g.png"
+            If P86.Tag = "g.png" Then
+                P86.Image = Image.FromFile("gk.png")
+                P86.Tag = "gk.png" 'turns into king piece when reached end of board
+            End If
         ElseIf pick = 32 Then
-            P88.Image = Image.FromFile("g.png")
-            P88.Tag = "g.png"
-        End If
+                P88.Image = Image.FromFile("g.png")
+                P88.Tag = "g.png"
+            End If
     End Sub
 
     Public Sub P71_Click(sender As Object, e As EventArgs) Handles P71.Click
@@ -483,7 +492,8 @@
             P71.Image = Image.FromFile("rs.png")
             P71.Tag = "rs.png"
         End If
-
+        'P55.Image = Image.FromFile("rk.png")
+        P66.Image = Image.FromFile("g.png")
     End Sub
 
     Public Sub P62_Click(sender As Object, e As EventArgs) Handles P62.Click
