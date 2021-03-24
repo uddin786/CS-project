@@ -200,7 +200,7 @@
             P42.Tag = "g.png"
         ElseIf pick = 14 Then
             P44.Image = Image.FromFile("g.png")
-            P44.Tag = "g.png"
+            P44.Tag = "g.png" '
         ElseIf pick = 15 Then
             P46.Image = Image.FromFile("g.png")
             P46.Tag = "g.png"
